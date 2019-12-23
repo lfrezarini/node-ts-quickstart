@@ -2,7 +2,7 @@ import { createContainer, InjectionMode, asValue, asClass, AwilixContainer } fro
 
 import { controllers } from '../api';
 import { environment } from '../environment';
-import { logger } from '../services/logger';
+import { logger } from '../logger';
 import { Server } from '../server';
 
 export const makeContainer = (depsOverride?: Record<string, any>): AwilixContainer => {
