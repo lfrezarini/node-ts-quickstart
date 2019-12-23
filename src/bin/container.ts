@@ -1,7 +1,7 @@
 import { createContainer, InjectionMode, asValue, asClass, AwilixContainer } from 'awilix';
 
 import { controllers } from '../api';
-import { environment } from '../config';
+import { environment } from '../environment';
 import { logger } from '../services/logger';
 import { Server } from '../server';
 

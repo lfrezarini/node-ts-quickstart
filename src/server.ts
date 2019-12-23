@@ -1,6 +1,6 @@
 import * as http from 'http';
-import { Logger } from 'winston';
-import { Config } from './config';
+import { Logger } from 'pino';
+import { Environment } from './environment';
 import { Controllers } from './api';
 
 export class Server {
@@ -14,7 +14,7 @@ export class Server {
 
   private controllers: Controllers;
 
-  public constructor(environment: Config, controllers: Controllers, logger: Logger) {
+  public constructor(environment: Environment, controllers: Controllers, logger: Logger) {
     this.logger = logger;
 
     this.host = environment.HTTP_HOST;
